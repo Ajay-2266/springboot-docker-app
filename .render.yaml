@@ -1,5 +1,10 @@
 services:
   - name: springboot-db
+    type: pserv
+    plan: free
+    env: docker
+
+  - name: springboot-docker-app
     type: web
     env: docker
     region: oregon

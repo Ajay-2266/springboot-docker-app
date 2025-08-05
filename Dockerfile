@@ -8,4 +8,9 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:17-jdk
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
+
+# Expose the port your app runs on
+EXPOSE 8087
+
+# Run the jar file
 ENTRYPOINT ["java", "-jar", "app.jar"]
