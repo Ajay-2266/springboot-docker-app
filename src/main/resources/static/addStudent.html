@@ -1,0 +1,126 @@
+<!--<!DOCTYPE html>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Add Student</h1>
+        <form id="add-form">
+            <input type="number" id="id" placeholder="Enter ID" required />
+            <input type="text" id="name" placeholder="Enter Name" required />
+            <input type="email" id="email" placeholder="Enter Email" required />
+            <input type="text" id="course" placeholder="Enter Department" required />
+            <input type="submit" value="Add Student" />
+        </form>
+    </div>
+
+    <script src="js/add.js"></script>
+
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Student - StudentMS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #d3cce3, #e9e4f0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-card {
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      width: 400px;
+      animation: slideIn 0.7s ease;
+    }
+
+    .form-card h1 {
+      text-align: center;
+      color: #4a47a3;
+      margin-bottom: 25px;
+      font-size: 26px;
+    }
+
+    .form-card input[type="text"],
+    .form-card input[type="email"],
+    .form-card input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      transition: border-color 0.3s;
+    }
+
+    .form-card input:focus {
+      border-color: #4a47a3;
+      outline: none;
+    }
+
+    .form-card input[type="submit"] {
+      background-color: #4a47a3;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .form-card input[type="submit"]:hover {
+      background-color: #3c379b;
+      transform: scale(1.02);
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .form-card {
+        width: 90%;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-card">
+    <h1>Add Student</h1>
+    <form id="add-form">
+      <input type="number" id="id" placeholder="Enter ID" required />
+      <input type="text" id="name" placeholder="Enter Name" required />
+      <input type="email" id="email" placeholder="Enter Email" required />
+      <input type="text" id="course" placeholder="Enter Department" required />
+      <input type="submit" value="Add Student" />
+    </form>
+  </div>
+
+  <script src="js/add.js"></script>
+</body>
+</html>

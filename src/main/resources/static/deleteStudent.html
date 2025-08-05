@@ -1,0 +1,129 @@
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<title>Delete-Student</title>
+	</head>
+	<body>
+		<h1>Delete Student</h1>
+		<input type="number" id="delete-id" placeholder="Enter id"/>
+		<button onclick="deletestudent()">Delete Student</button>
+		<script src="js/delete.js"></script>
+	</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Delete Student - StudentMS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .delete-card {
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 14px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      width: 360px;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .delete-card h1 {
+      text-align: center;
+      color: #6a0572;
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+
+    .delete-card input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      transition: border-color 0.3s ease;
+    }
+
+    .delete-card input:focus {
+      border-color: #6a0572;
+      outline: none;
+    }
+
+    .delete-card button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .delete-card button:hover {
+      background-color: #c0392b;
+      transform: scale(1.02);
+    }
+
+    #message {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .success {
+      color: green;
+    }
+
+    .error {
+      color: red;
+    }
+
+    @keyframes fadeIn {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .delete-card {
+        width: 90%;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="delete-card">
+    <h1>Delete Student</h1>
+    <input type="number" id="student-id" placeholder="Enter Student ID" />
+    <button onclick="deleteStudent()">Delete</button>
+    <div id="message"></div>
+  </div>
+
+  <script src="js/delete.js"></script>
+</body>
+</html>
+

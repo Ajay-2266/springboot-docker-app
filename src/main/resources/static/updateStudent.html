@@ -1,0 +1,139 @@
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<title>update Student</title>
+	</head>
+	<body>
+		<h1>update Student</h1>
+		<input type="number" id="id" placeholder="Enter id"/>
+		<input type="text" id="name" placeholder="Enter Name" required/>
+		<input type="email" id="email" placeholder="Enter email" required/>
+		<input type="text" id="course" placeholder="Enter Department" required/>
+		
+		<button onclick="updateStudent()">Update Student</button>
+		
+		<script src="js/update.js"></script>
+	</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Update Student - StudentMS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .update-card {
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 14px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      width: 400px;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .update-card h1 {
+      text-align: center;
+      color: #d35400;
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+
+    .update-card input[type="text"],
+    .update-card input[type="number"],
+    .update-card input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    .update-card input:focus {
+      border-color: #d35400;
+      outline: none;
+    }
+
+    .update-card button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .update-card button:hover {
+      background-color: #1e8449;
+      transform: scale(1.02);
+    }
+
+    #message {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .success {
+      color: green;
+    }
+
+    .error {
+      color: red;
+    }
+
+    @keyframes fadeIn {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .update-card {
+        width: 90%;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="update-card">
+    <h1>Update Student</h1>
+    <input type="number" id="id" placeholder="Enter ID to Update" required />
+    <input type="text" id="name" placeholder="Enter New Name" required />
+    <input type="email" id="email" placeholder="Enter New Email" required />
+    <input type="text" id="department" placeholder="Enter New Department" required />
+    <button onclick="updateStudent()">Update Student</button>
+    <div id="message"></div>
+  </div>
+
+  <script src="js/update.js"></script>
+</body>
+</html>
+
