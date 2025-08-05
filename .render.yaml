@@ -1,0 +1,8 @@
+services:
+  - name: springboot-db
+    type: web
+    env: docker
+    region: oregon
+    plan: free
+    dockerfilePath: Dockerfile
+    autoDeploy: true
